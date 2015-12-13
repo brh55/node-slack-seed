@@ -1,0 +1,38 @@
+{
+  "name": "slack-contentful",
+  "version": "0.0.1",
+  "description": "Slack notifications for a specified entry",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && nodeunit tests",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "slack",
+    "contentful",
+    "node"
+  ],
+  "author": "Brandon Him",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "dotenv": "^0.4.0",
+    "express": "^4.13.3",
+    "node-cache": "^3.0.0",
+    "node-slack": "0.0.7",
+    "nodeunit": "^0.9.1",
+    "utils": "^0.2.2"
+  },
+  "devDependencies": {
+    "xo": "^0.11.1"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "space": 4,
+    "rules": {
+      "new-cap": 0
+    }
+  }
+}
