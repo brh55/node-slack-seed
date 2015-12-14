@@ -1,16 +1,17 @@
 {
-  "name": "slack-contentful",
-  "version": "0.0.1",
-  "description": "Slack notifications for a specified entry",
+  "name": "node-slack-seed",
+  "version": "0.1.0",
+  "description": "A template/boilerplate for starting a node based Slack bot",
   "main": "index.js",
   "scripts": {
-    "test": "xo && nodeunit tests",
+    "test": "nodeunit tests",
     "start": "node server.js"
   },
   "keywords": [
     "slack",
-    "contentful",
-    "node"
+    "template",
+    "node",
+    "boilerplate"
   ],
   "author": "Brandon Him",
   "license": "MIT",
@@ -25,14 +26,5 @@
   },
   "devDependencies": {
     "xo": "^0.11.1"
-  },
-  "xo": {
-    "envs": [
-      "node"
-    ],
-    "space": 4,
-    "rules": {
-      "new-cap": 0
-    }
   }
 }

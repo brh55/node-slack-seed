@@ -10,46 +10,32 @@ var bodyParser = require('body-parser');
 var util = require('./libs/util');
 var config = require('./libs/config');
 var slackService = require('./libs/slackService');
-var messageCtrl = require('./libs/messageCtrl');
-var filter = require('./libs/filter');
 
+// Commonly used Middlewear to parse JSON request
 var jsonParser = bodyParser.json({type: 'application/*'});
-
-// TODO: Implement Caching to only submit 1 update or find better method
-var nodeCache = require('node-cache');
-var entryCache = new nodeCache({checkperiod: 0});
 
 app.post('/', jsonParser, function (req, res) {
     // if request doesn't contain body, respond with 400 error.
     if (!req.body) {
         return res.sendStatus(400);
-    }
-
-    var correctEntry = filter.checkEntry(req.body.sys.id);
-
-    // check for publish notifications
-    if (req.rawHeaders.indexOf('ContentManagement.Entry.publish') > -1 &&
-            correctEntry) {
-        var key = req.body.sys.id;
-
-        if (entryCache.get(key) !== true) {
-            var message = messageCtrl.buildMessage(req.body);
-            slackService.sendMessage(message);
-            // Store Entries in ID-Revison#: true -- for 10 Minutes
-            entryCache.set(key, true, 600);
-        }
+    } else {
+        // Place logic to for message to be sent to Slack service
+        slackService.sendMessage(message);
     }
 });
 
+// This is a endpoint that can be used to check if configs are properly set, and can be built further upon
+// for your needs.
 app.get('/check', function (req, res) {
     if (util.allDefined(config)) {
+        // If all configs are properly set, display Success confirmation
         var entries = filter.getEntryString();
         var htmlString = '<h1>Successful Set-up</h1><h3>Please verify settings below</h3>';
-        htmlString += '<table><tr><td>Channel</td><td>Bot Username</td><td>Entries Tracked</td></tr><tr><td>' + config.channel + '</td><td>' + config.username + '</td><td>' + entries + '</td></tr></table>';
+        htmlString += '<table><tr><td>Channel</td><td>Bot Username</td></tr><tr><td>' + config.channel + '</td><td>' + config.username + '</td></tr></table>';
         res.send(htmlString);
     } else {
+        // Error message if an undefined config is discovered
         var undefConfigs = util.getUndefinedKeys(config, ', ');
-        // TODO: List out non-sensitive configs for better debugging
         res.send('<h1>Please verify the following configs:</h1>' + undefConfigs);
     }
 });
