@@ -1,7 +1,7 @@
 # node-slack-seed
 
 ![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-blue.svg)
-[![Build Status](https://travis-ci.org/brh55/node-slack-seed.svg?branch=master)](https://travis-ci.org/brh55/node-slack-seed) [![devDendencies Status](https://david-dm.org/brh55/node-slack-seed/dev-status.svg)](https://david-dm.org/brh55/node-slack-seed#info=Dependencies) [![Coverage Status](https://coveralls.io/repos/brh55/node-slack-seed/badge.svg?branch=master&service=github)](https://coveralls.io/github/brh55/node-slack-seed?branch=master) [![Support via Gratipay](http://img.shields.io/gratipay/brh55.svg?style=flat-square)](https://gratipay.com/brh55)
+[![Build Status](https://travis-ci.org/brh55/node-slack-seed.svg?branch=master)](https://travis-ci.org/brh55/node-slack-seed) [![Dependency Status](https://david-dm.org/brh55/node-slack-seed.svg)](https://david-dm.org/brh55/node-slack-seed) [![Coverage Status](https://coveralls.io/repos/brh55/node-slack-seed/badge.svg?branch=master&service=github)](https://coveralls.io/github/brh55/node-slack-seed?branch=master) [![Support via Gratipay](http://img.shields.io/gratipay/brh55.svg?style=flat-square)](https://gratipay.com/brh55)
 
 A generic seed/boilerplate to get started on a Node based Slack bot. Fork, clone, extend upon it, and you're set to go!
 
