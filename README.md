@@ -3,7 +3,7 @@
 ![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-blue.svg)
 [![Build Status](https://travis-ci.org/brh55/node-slack-seed.svg?branch=master)](https://travis-ci.org/brh55/node-slack-seed) [![Dependency Status](https://david-dm.org/brh55/node-slack-seed.svg)](https://david-dm.org/brh55/node-slack-seed) [![Coverage Status](https://coveralls.io/repos/brh55/node-slack-seed/badge.svg?branch=master&service=github)](https://coveralls.io/github/brh55/node-slack-seed?branch=master) [![Support via Gratipay](http://img.shields.io/gratipay/brh55.svg?style=flat-square)](https://gratipay.com/brh55)
 
-A generic seed/boilerplate to get started on a Node based Slack bot. Fork, clone, extend upon it, and you're set to go!
+A generic seed/boilerplate to get started on a Node based Slack bot. Fork, clone, extend upon it, and you're set to go! 
 
 This template features:
 
@@ -11,6 +11,9 @@ This template features:
 - nodeunit for unit testing
 - Commonly used readme badges (Version, Travis CI, David DM, Gratipay)
 - Pre-configured Heroku quick deploy badge *(app.json)*
+- Starter README directions directions
+
+### Starter Directions
 
 ## Requirements
 
@@ -76,7 +79,9 @@ If you've successfully deployed, you should get a successful message stating *Su
 
 If set up was unsuccessful, you should get a message to verify your configurations, along with important configurations that the server has set up.
 
-## Contribute
-A bulk of the project can be refactored quite a bit. Thus, if you are more than welcome to submit any issues and feature request to the issues section of the repo. I'm no means a expert in Node, so feel free to submit PR for refactors, typos, features, README clarity, etc. All I ask is maintain the code style in place, and keep the code clean.
+## License
+This repository is protected under the MIT License.
 
+## Contribute
+Contributions are welcomed, feel free to submit and report any issues.
 
