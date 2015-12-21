@@ -13,7 +13,10 @@ This template features:
 - Pre-configured Heroku quick deploy badge *(app.json)*
 - Starter README directions directions
 
-### Starter Directions
+Starter README below
+
+---
+# App-Name
 
 ## Requirements
 
