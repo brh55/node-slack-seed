@@ -12,6 +12,11 @@ This boilerplate features:
 - [nodeunit](https://github.com/caolan/nodeunit) for simple, easy unit testing
 - Commonly used readme badges (Version, Travis CI, David DM, Gratipay)
 - Pre-configured [Heroku quick deploy badge](https://devcenter.heroku.com/articles/heroku-button) *(app.json)*
+- Starter README directions directions
+
+Starter README below
+---
+# App-Name
 
 ## Requirements
 
@@ -77,7 +82,9 @@ If you've successfully deployed, you should get a successful message stating *Su
 
 If set up was unsuccessful, you should get a message to verify your configurations, along with important configurations that the server has set up.
 
-## Contribute
-A bulk of the project can be refactored quite a bit. Thus, if you are more than welcome to submit any issues and feature request to the issues section of the repo. I'm no means a expert in Node, so feel free to submit PR for refactors, typos, features, README clarity, etc. All I ask is maintain the code style in place, and keep the code clean.
+## License
+This repository is protected under the MIT License.
 
+## Contribute
+Contributions are welcomed, feel free to submit and report any issues.
 
