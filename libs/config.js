@@ -4,6 +4,11 @@ var dotenv = require('dotenv');
 
 dotenv.load();
 
+/**
+ * Export .env config values into into a config object
+ *
+ * @type {Object}
+ */
 module.exports = {
     webhook: process.env.SLACK_WEBHOOK,
     port: Number(process.env.PORT) || 5000,
