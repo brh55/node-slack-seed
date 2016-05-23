@@ -75,7 +75,7 @@ After your app has deployed, go to your server url and go to the `/check` endpoi
 
 Example:
 ```
-http://myherokuapp.heroku.com/check
+http://myherokuapp.heroku.com/debug
 ```
 
 If you've successfully deployed, you should get a successful message stating *Successful Set-up* along with a table of configurations to verify against.
