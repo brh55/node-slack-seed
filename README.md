@@ -1,8 +1,8 @@
 # node-slack-seed
 
-![Version 0.1.1](https://img.shields.io/badge/version-0.1.1-blue.svg)
+![Repo Version](https://img.shields.io/github/tag/brh55/node-slack-seed.svg?style=flat-square&label=version)]
 [![Build Status](https://travis-ci.org/brh55/node-slack-seed.svg?branch=master)](https://travis-ci.org/brh55/node-slack-seed) [![Dependency Status](https://david-dm.org/brh55/node-slack-seed.svg)](https://david-dm.org/brh55/node-slack-seed)
- [![Coverage Status](https://coveralls.io/repos/brh55/node-slack-seed/badge.svg?branch=master&service=github)](https://coveralls.io/github/brh55/node-slack-seed?branch=master) [![Support via Gratipay](http://img.shields.io/gratipay/brh55.svg?style=flat-square)](https://gratipay.com/brh55)
+ [![Coverage Status](https://coveralls.io/repos/brh55/node-slack-seed/badge.svg?branch=master&service=github)](https://coveralls.io/github/brh55/node-slack-seed?branch=master)
 
 A generic seed/boilerplate to get started on a Node based Slack bot. Fork, clone, extend upon it, and you're set to go!
 
