@@ -2,7 +2,7 @@
   "name": "node-slack-seed",
   "version": "0.1.0",
   "description": "A template/boilerplate for starting a node based Slack bot",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "nodeunit tests",
     "start": "node server.js"
