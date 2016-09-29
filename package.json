@@ -17,11 +17,10 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
-    "dotenv": "^1.2.0",
+    "dotenv": "^2.0.0",
     "express": "^4.13.3",
-    "node-cache": "^3.0.0",
     "node-slack": "0.0.7",
-    "nodeunit": "^0.9.1",
+    "nodeunit": "^0.10.2",
     "utils": "^0.3.1"
   }
 }
